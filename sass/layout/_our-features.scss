@@ -1,0 +1,94 @@
+.our-features{
+    padding: 60px 15px;
+
+    &-list-item{
+        width: 100%;
+        
+        &:not(:last-child){
+            margin-bottom: 30px;
+        } 
+
+        &::before {
+            content: "";
+            display: block;
+            margin-bottom: 30px;
+            height: 120px;
+            border-radius: 4px;
+            background-color: $buttons-bg-color;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:nth-child(1)::before{
+            background-image: url(../images/our-features/features-1-antenna.svg);
+        }
+
+        &:nth-child(2)::before{
+            background-image: url(../images/our-features/features-2-clock.svg);
+        }
+    
+        &:nth-child(3)::before{
+            background-image: url(../images/our-features/features-3-diagram.svg);
+        }
+    
+        &:nth-child(4)::before{
+            background-image: url(../images/our-features/features-4-astronaut.svg);
+        }
+    }   
+
+    &-title {
+        @include font ($main-font, 700, 14px, 1.143, 0.03em, $title-color);
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;            
+    }
+    &-description {
+        @include font ($main-font, 400, 14px, 1.71, 0.03em, $description-color);
+    }                   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .our-features{
+        &-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-list-item{
+            width: calc((100% - 30px) / 2);
+
+            &:not(:nth-child(2)){
+                margin-bottom: 30px;
+            } 
+
+            &:nth-child(odd){
+                margin-right: 30px;
+            } 
+        }
+        &-title {  
+            text-align: start;
+        }
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    .our-features {
+        padding-top: 94px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        &-title {
+            text-align: start;
+        }
+        
+        &-list-item{
+            display: inline-block;
+            width: calc((100% - 3 * 30px) / 4);
+        
+            &:not(:last-child){
+                margin-right: 26px;
+                margin-bottom: 0;
+            }
+        }    
+    }
+}

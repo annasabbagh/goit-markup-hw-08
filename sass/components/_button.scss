@@ -1,0 +1,59 @@
+.button {
+    @include font ($main-font, 700, 16px, 1.875, 0.06em, $main-light-theme-color );
+    background-color: $accent-color;
+    height: 50px;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+}
+
+// mobile version only
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+      fill: $accent-color;
+    }
+
+    & .header-icon-close{
+        display: none;
+    }
+
+    &.is-open .header-icon-close {
+        display: block;
+    }
+    &.is-open .header-icon-menu {
+        display: none;
+    }
+}
+
+.portfolio-filter-button{
+    @include font ($main-font, 500, 16px, 1.162, 0.03em, $title-color);
+    text-align: center;
+    background-color: $buttons-bg-color;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    display: inline-block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus { 
+        color: $main-light-theme-color;
+        background-color: $accent-color;
+        box-shadow: 
+        0px 3px 1px rgba(0, 0, 0, 0.1), 
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+
+

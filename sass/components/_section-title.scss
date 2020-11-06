@@ -1,0 +1,13 @@
+.section-title {
+    @include font ($main-font, 700, 36px, 1.167, 0.03em, $title-color);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .section-title{
+        margin-bottom: 50px;
+    }  
+}
