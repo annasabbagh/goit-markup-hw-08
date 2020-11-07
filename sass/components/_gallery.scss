@@ -84,6 +84,10 @@
         &__list-item:nth-child(odd) {
           margin-right: 30px;
         }
+
+        &__list-item:not(:last-child){
+            margin-bottom: 30px;
+        }
     }
 }
 

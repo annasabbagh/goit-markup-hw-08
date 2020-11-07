@@ -505,6 +505,9 @@ img {
   .gallery__list-item:nth-child(odd) {
     margin-right: 30px;
   }
+  .gallery__list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

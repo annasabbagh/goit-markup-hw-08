@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 100%;
     
     &-title {
         @include font ($main-font, 900, 26px, 1.62, 0.06em, $main-light-theme-color);
@@ -14,7 +15,7 @@
 
 @media screen and (max-width: 767px) {
     .hero {
-        background-size: 480px;
+        background-size: cover;
         background-image:
         linear-gradient(
             rgba(47, 48, 58, 0.4),
