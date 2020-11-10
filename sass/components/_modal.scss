@@ -9,6 +9,7 @@
 
     padding: 93px 15px;
     overflow-y: scroll;
+    z-index: 20;
 
     /*уход backdrop*/
     &.is-hidden {
@@ -20,7 +21,7 @@
 }
 
 .modal {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -29,6 +30,7 @@
     padding: 40px;
     background-color: $main-light-theme-color;
     transition: all 500ms ease-in-out 250ms;
+
     
 
     /*уход modal*/
@@ -167,14 +169,18 @@
     }   
 }
 
+@media screen and (min-height: 100px) and ( max-height: 450px){
+    .modal{
+        top: 100%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .backdrop{
         padding: 221px 536px;
     }
 
     .modal {
-        position: absolute;
-      
         height: 581px;
         width: 528px;
 

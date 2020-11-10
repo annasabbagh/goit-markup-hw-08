@@ -197,6 +197,7 @@ img {
   transition: all 500ms ease-out 250ms;
   padding: 93px 15px;
   overflow-y: scroll;
+  z-index: 20;
   /*уход backdrop*/
 }
 
@@ -208,7 +209,7 @@ img {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -373,12 +374,17 @@ img {
   align-self: center;
 }
 
+@media screen and (min-height: 100px) and (max-height: 450px) {
+  .modal {
+    top: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .backdrop {
     padding: 221px 536px;
   }
   .modal {
-    position: absolute;
     height: 581px;
     width: 528px;
   }
@@ -393,6 +399,7 @@ img {
   box-sizing: border-box;
   background-color: #FFFFFF;
   width: 100%;
+  z-index: 10;
 }
 
 .header-mobile-navigation {

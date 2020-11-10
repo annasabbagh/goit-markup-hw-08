@@ -3,6 +3,7 @@
     box-sizing: border-box;
     background-color: $main-light-theme-color;
     width: 100%;
+    z-index: 10;
 
     &-mobile-navigation{
         display: flex;

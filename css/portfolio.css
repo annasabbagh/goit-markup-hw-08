@@ -191,6 +191,7 @@ img {
   box-sizing: border-box;
   background-color: #FFFFFF;
   width: 100%;
+  z-index: 10;
 }
 
 .header-mobile-navigation {
@@ -459,7 +460,8 @@ img {
 }
 
 .gallery__list-item:hover .gallery__overlay,
-.gallery__list-item:focus .gallery__overlay {
+.gallery__list-item:focus .gallery__overlay,
+.gallery__list-item:active .gallery__overlay {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
