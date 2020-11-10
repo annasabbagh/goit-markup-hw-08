@@ -208,7 +208,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -378,6 +378,7 @@ img {
     padding: 221px 536px;
   }
   .modal {
+    position: absolute;
     height: 581px;
     width: 528px;
   }
