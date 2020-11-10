@@ -15,7 +15,6 @@
 
 @media screen and (max-width: 767px) {
     .hero {
-        background-size: cover;
         background-image:
         linear-gradient(
             rgba(47, 48, 58, 0.4),
@@ -39,7 +38,7 @@
 @media screen and (min-width: 768px) {
     .hero {
         padding: 118px 204px;
-        background-size: 768px;
+        background-size: 100%;
         background-image:
         linear-gradient(
             rgba(47, 48, 58, 0.4),
