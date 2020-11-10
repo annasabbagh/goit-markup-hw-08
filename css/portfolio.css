@@ -460,8 +460,7 @@ img {
 }
 
 .gallery__list-item:hover .gallery__overlay,
-.gallery__list-item:focus .gallery__overlay,
-.gallery__list-item:active .gallery__overlay {
+.gallery__list-item:focus .gallery__overlay {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -492,7 +491,7 @@ img {
   color: #757575;
 }
 
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .gallery__list-item:not(:last-child) {
     margin-bottom: 30px;
   }
